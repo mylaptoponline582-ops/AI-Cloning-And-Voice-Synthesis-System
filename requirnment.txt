@@ -1,7 +1,8 @@
 streamlit
-numpy
 torch
+torchaudio
 TTS
 streamlit-mic-recorder
 librosa
 soundfile
+numpy
