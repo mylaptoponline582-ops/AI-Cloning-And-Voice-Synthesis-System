@@ -1,0 +1,7 @@
+streamlit
+numpy
+torch
+TTS
+streamlit-mic-recorder
+librosa
+soundfile
