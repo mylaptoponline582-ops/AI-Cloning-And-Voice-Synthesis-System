@@ -5,10 +5,16 @@ import streamlit as st
 import torch
 from TTS.api import TTS
 import os
+import platform
+
+if platform.system() == "Windows":
+    os.add_dll_directory(
+        r"C:\ffmpeg8\ffmpeg-8.1.2-full_build-shared\ffmpeg-8.1.2-full_build-shared\bin"
+    )
 #to keep everytime code to run in same environment
-os.add_dll_directory(
-    r"C:\ffmpeg8\ffmpeg-8.1.2-full_build-shared\ffmpeg-8.1.2-full_build-shared\bin"
-)
+# os.add_dll_directory(
+#     r"C:\ffmpeg8\ffmpeg-8.1.2-full_build-shared\ffmpeg-8.1.2-full_build-shared\bin"
+# )
 import shutil
 import subprocess
 from streamlit_mic_recorder import mic_recorder
